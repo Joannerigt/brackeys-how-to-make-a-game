@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Brackeys How to make a game"
-run/main_scene="uid://cfjxu5q2fym1c"
+run/main_scene="uid://ilg4butphub4"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
