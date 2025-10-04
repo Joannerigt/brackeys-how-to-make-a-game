@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8on3c0r1kd7v"]
+
+[ext_resource type="Script" uid="uid://qql585vrx2yj" path="res://Scripts/portal_zone.gd" id="1_s3so8"]
+
+[node name="PortalZone" type="Area2D"]
+script = ExtResource("1_s3so8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.6
