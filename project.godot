@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 Music="*res://Scenes/music.tscn"
 
+[dotnet]
+
+project/assembly_name="Brackeys How to make a game"
+
 [input]
 
 jump={

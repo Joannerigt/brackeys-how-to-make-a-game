@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cxr8cb85eie23"]
+[gd_scene load_steps=31 format=3 uid="uid://cxr8cb85eie23"]
 
 [ext_resource type="Script" uid="uid://bgljerypro21v" path="res://Scripts/game_manager.gd" id="1_3ipdw"]
 [ext_resource type="PackedScene" uid="uid://bu2arm0ehct4y" path="res://Scenes/Slime.tscn" id="2_8h4de"]
@@ -265,25 +265,7 @@ _data = {
 &"RESET": SubResource("Animation_3dryh")
 }
 
-[sub_resource type="Animation" id="Animation_o5ofx"]
-resource_name = "platform4"
-length = 8.5
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(1, 8.00322),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1664, -12), Vector2(2080, -12)]
-}
-
 [sub_resource type="Animation" id="Animation_8nmnw"]
-length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -297,15 +279,10 @@ tracks/0/keys = {
 "values": [Vector2(1664, -12)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ngxpw"]
-_data = {
-&"RESET": SubResource("Animation_8nmnw"),
-&"platform4": SubResource("Animation_o5ofx")
-}
-
-[sub_resource type="Animation" id="Animation_ngxpw"]
-resource_name = "platform5"
-length = 4.0
+[sub_resource type="Animation" id="Animation_o5ofx"]
+resource_name = "platform4"
+length = 6.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -313,10 +290,16 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.966667, 3),
+"times": PackedFloat32Array(0.660261, 5.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1664, -12), Vector2(1792, -12)]
+"values": [Vector2(1792.51, -12), Vector2(2080, -12)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ngxpw"]
+_data = {
+&"RESET": SubResource("Animation_8nmnw"),
+&"platform4": SubResource("Animation_o5ofx")
 }
 
 [sub_resource type="Animation" id="Animation_trw0a"]
@@ -334,10 +317,81 @@ tracks/0/keys = {
 "values": [Vector2(1664, -12)]
 }
 
+[sub_resource type="Animation" id="Animation_ngxpw"]
+resource_name = "platform5"
+length = 4.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.966667, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1664, -12), Vector2(1792, -12)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tjcye"]
 _data = {
 &"RESET": SubResource("Animation_trw0a"),
 &"platform5": SubResource("Animation_ngxpw")
+}
+
+[sub_resource type="Animation" id="Animation_tjcye"]
+resource_name = "platform6"
+length = 4.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2080, -12), Vector2(2256, -12)]
+}
+
+[sub_resource type="Animation" id="Animation_557vl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2080, -12)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_557vl"]
+_data = {
+&"RESET": SubResource("Animation_557vl"),
+&"platform6": SubResource("Animation_tjcye")
+}
+
+[sub_resource type="Animation" id="Animation_nlqrh"]
+length = 0.001
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(736, 69)]
 }
 
 [sub_resource type="Animation" id="Animation_34y5i"]
@@ -355,21 +409,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(735, 90), Vector2(577, 90)]
-}
-
-[sub_resource type="Animation" id="Animation_nlqrh"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(736, 69)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8nmnw"]
@@ -394,6 +433,7 @@ offset_right = 2449.0
 offset_bottom = -125.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Your score is X"
+metadata/_edit_use_anchors_ = true
 
 [node name="Enemy" type="Node" parent="."]
 
@@ -492,7 +532,7 @@ position = Vector2(1711, -26)
 position = Vector2(2188, -25)
 
 [node name="Player" parent="." instance=ExtResource("5_57lp3")]
-position = Vector2(-119, -47)
+position = Vector2(-119, -48)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
@@ -535,6 +575,16 @@ position = Vector2(1664, -12)
 libraries = {
 &"": SubResource("AnimationLibrary_tjcye")
 }
+autoplay = "platform5"
+
+[node name="Platform_Grass6" parent="Platforms" instance=ExtResource("6_n5ptj")]
+position = Vector2(2080, -12)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/Platform_Grass6"]
+libraries = {
+&"": SubResource("AnimationLibrary_557vl")
+}
+autoplay = "platform6"
 
 [node name="Platform_Grass3" parent="Platforms" instance=ExtResource("6_n5ptj")]
 position = Vector2(736, 69)
