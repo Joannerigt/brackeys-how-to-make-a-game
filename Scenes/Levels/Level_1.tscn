@@ -314,10 +314,10 @@ unique_name_in_owner = true
 script = ExtResource("1_3ipdw")
 
 [node name="Score" type="Label" parent="GameManager"]
-offset_left = 2336.0
-offset_top = -148.0
-offset_right = 2449.0
-offset_bottom = -125.0
+offset_left = 1640.0
+offset_top = -157.0
+offset_right = 1753.0
+offset_bottom = -134.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Your score is X"
 metadata/_edit_use_anchors_ = true
@@ -410,7 +410,7 @@ position = Vector2(1240, -150)
 position = Vector2(1384, -102)
 
 [node name="Coin18" parent="Coins" instance=ExtResource("4_f3nwb")]
-position = Vector2(1193, -103)
+position = Vector2(1128, 23)
 
 [node name="Coin19" parent="Coins" instance=ExtResource("4_f3nwb")]
 position = Vector2(1624, -40)
