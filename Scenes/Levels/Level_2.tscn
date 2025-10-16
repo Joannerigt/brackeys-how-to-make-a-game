@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dhxy116d02dab"]
+[gd_scene load_steps=26 format=3 uid="uid://dhxy116d02dab"]
 
 [ext_resource type="Script" uid="uid://bgljerypro21v" path="res://Scripts/game_manager.gd" id="1_axppo"]
 [ext_resource type="PackedScene" uid="uid://bu2arm0ehct4y" path="res://Scenes/Slime.tscn" id="2_dafx8"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c6ejwphmyod12" path="res://Scenes/Platform_Grass.tscn" id="6_ck0i2"]
 [ext_resource type="PackedScene" uid="uid://jrl6mjro1nwq" path="res://Scenes/killzone.tscn" id="7_cexhq"]
 [ext_resource type="PackedScene" uid="uid://de6w8vdwe0en5" path="res://Scenes/Platform_Sand.tscn" id="9_inorh"]
+[ext_resource type="PackedScene" uid="uid://c2qw3x2tthtll" path="res://Scenes/Objects/Portal2.tscn" id="9_oxtd8"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_qxrlw"]
 
@@ -434,3 +435,9 @@ position = Vector2(632, -144)
 
 [node name="Slime2" parent="." instance=ExtResource("2_dafx8")]
 position = Vector2(664, -240)
+
+[node name="Slime3" parent="." instance=ExtResource("2_dafx8")]
+position = Vector2(1321, -144)
+
+[node name="Portal" parent="." instance=ExtResource("9_oxtd8")]
+position = Vector2(1480, -192)
